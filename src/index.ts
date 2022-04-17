@@ -1,7 +1,7 @@
 import {hello} from "./other";
 import BdAPi from "@bandagedbd/bdapi"
 
-class embedAll {
+class TemplatePlugin {
    start() {
       hello();
    }
@@ -11,4 +11,4 @@ class embedAll {
    observer() {}
 }
 
-module.exports = embedAll
+module.exports = TemplatePlugin
