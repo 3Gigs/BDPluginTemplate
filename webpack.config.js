@@ -6,12 +6,12 @@ const {info} = require("./config.json")
 module.exports = {
   mode: "production",
   target: "node",
-  entry: {
-    TemplatePlugin: "./src/index.ts",
-  },
+  entry: ["./src/other.ts", "./src/index.ts"],
   output: {
     path: path.resolve(__dirname, "plugin"),
     filename: "[name].plugin.js",
+    library: `${info.name}`,
+    libraryExport: `${info.name}`,
     libraryTarget: "window"
   },
   optimization: {
