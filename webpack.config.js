@@ -7,7 +7,7 @@ module.exports = {
   mode: "production",
   target: "node",
   entry: {
-    embedAll: "./src/index.ts",
+    TemplatePlugin: "./src/index.ts",
   },
   output: {
     path: path.resolve(__dirname, "plugin"),
