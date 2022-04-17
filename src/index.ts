@@ -1,4 +1,5 @@
 import {hello} from "./other";
+import BdAPi from "@bandagedbd/bdapi"
 
 class embedAll {
    start() {
