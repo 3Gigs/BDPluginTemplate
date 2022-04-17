@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "plugin"),
     filename: "[name].plugin.js",
-    libraryTarget: "commonjs2"
+    libraryTarget: "window"
   },
   optimization: {
     minimize: false
